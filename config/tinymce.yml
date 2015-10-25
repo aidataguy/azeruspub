@@ -1,0 +1,12 @@
+toolbar:
+  - styleselect | bold italic | undo redo
+  - image | link
+plugins:
+  - image
+  - link
+  - textcolor
+  - visualblocks
+  - pagebreak
+  - preview
+  - save
+  - code

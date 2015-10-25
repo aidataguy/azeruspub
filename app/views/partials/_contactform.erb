@@ -1,0 +1,49 @@
+<div class="container contact-form">
+	<div class="row">
+			<div class="col s12 m12 l12">
+			<h3 class="title center-align">Contact Us</h3>
+			<%= form_for @contact do |f|%>
+				<p><%=  label_tag :"", :class => "formtags" do %>
+					<i class="fa fa-user fa-2x left formtags"></i>Full Name
+					<% end %>
+				</p>
+				<%= f.text_field :name, :class => "formtags" %> <br>
+				<p><%= label_tag :"", :class => "formtags" do %>
+					<i class="fa fa-reorder fa-2x left formtags"></i>Your website type?
+					<% end %>
+				</p>
+				<%= f.text_field :type, placeholder: "Ecommerce, Social Network, Blog, Forums, Portals", :class => "formtags" %> <br>
+				<p><%= label_tag :"", :class => "formtags" do %>
+					<i class="fa fa-envelope fa-2x left formtags"></i>Email
+					<% end %>
+				</p>
+				<%= f.text_field :email, placeholder: "eg: admin@thedomain.com", :class => "formtags" %> <br>
+				<p><%= label_tag :"", :class => "formtags" do %>
+					<i class="fa fa-money fa-2x left formtags"></i>Budget in USD?
+					<% end %>
+				</p>
+				<%= f.text_field :budget, :class => "formtags" %>
+				<p><%= label_tag :"", :class => "formtags" do %>
+					<i class="fa fa-phone fa-2x left formtags"></i>Phone Number
+					<% end %>
+				</p>
+				<%= f.text_field :phone, placeholder: "+1-111-111-1111", :class => "formtags" %>
+				<p><%= label_tag :"", :class => "formtags" do %>
+					<i class="fa fa-skype fa-2x left formtags"></i>Skype, Hangout or Whatever you prefer
+					<% end %>
+				</p>
+				<%= f.text_field :messenger_id, :class => "formtags" %>
+				<p><%= label_tag :"", :class => "formtags" do %>
+					<i class="fa fa-sticky-note fa-2x left formtags"></i>Additional Details
+					<% end %>
+				</p>
+				<%= f.text_area :description, placeholder: "Your message goes here", :class => "materialize-textarea"%>
+				<br>
+				<p class="center-align"><%= f.button(type: 'submit', :class => "btn waves-effect waves-red") do %>
+					<i class="fa fa-send fa-2x left"></i>Send
+				<% end %>
+				</p> 
+		<% end %>
+		</div>
+	</div>
+</div>

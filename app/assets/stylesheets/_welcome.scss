@@ -1,0 +1,148 @@
+@charset "UTF-8";
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//Container Styling
+#typeText{
+	color: $white;
+	font-size: 4em;
+	font-weight: 700;
+	width: auto;
+	font-family: $navs;
+}
+ .second{
+	max-width: 100%;
+	text-align: center;
+	color: $text;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 5em;
+	}
+.first, .third {
+	max-width: 100%;
+	text-align: center;
+	color: $text;
+	padding: 2em;
+	overflow: hidden;
+	height: 35em !important;
+}
+// Small and down media query
+@media #{$small-and-down} {
+	.first, .second, .third{
+	color: $text;
+	}
+	.first{
+	background: transparent;
+	width: 100%;
+	}
+	.second{
+		background: $footer;
+		width: 100%;
+	}
+	.third{
+		background: transparent;
+	}
+.work.col.s12 {
+		width: 100%;
+	}
+}
+.first{
+	background: transparent;
+	}
+.second{
+	background: $white;
+}
+.third{
+	background: url('columnbg.jpg') center center no-repeat;
+}
+.work{
+	.col.s12, .col.l3, .col.m3 {
+		margin-left: 3em;
+		padding-top: 3em;
+		margin-top: 3em;
+		height: 25em;
+		width: 25em;
+		background-color: $footer;
+		//margin-right: 1em;
+	}	
+	.col.s12:nth-last-child{
+		margin-right: none;
+	}
+	.col.l3:nth-last-child{
+		margin-right: none;
+	}
+	.col.m3:nth-last-child{
+		margin-right: none;
+	}
+}
+
+@media #{$small-and-down}{
+.work{
+	.col.s12 {
+		width: 100%;
+		margin: 0 !important;
+		}
+	}	
+}
+
+.content-container{
+	margin-top: 5em;	
+}
+
+.arrow {
+	transform: rotate(90deg);
+	font-weight: 700;
+	font-family: $navs;
+	color: $white;
+	font-size: 5em;
+	overflow: hidden;
+}
+.typed-cursor{
+    opacity: 1;
+    font-size: 4em;	
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.title-main{
+	color: $teal;
+	font-family: $navs;
+	font-weight: bold;
+}
+
+.first{
+	.col,.s12,.m12,.l12{
+		padding-top: 10em;
+	}
+}
+
+.second{
+	.fa{
+		line-height: 2em;
+	}
+	.circle{
+		border-radius: 1.5em;
+		width: 2em;
+		height: 2em;
+	}
+	a{
+	text-decoration: none;
+	color: $white;
+	}
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*Footer styling */
+footer.page-footer{
+	margin-bottom: none !important;
+	background-color: $footer;
+}
+.page-footer{
+		color: $text;
+		text-decoration: none;
+		height: auto;
+		margin: 0 !important;
+	.footlogo{
+		font-size: 1.5em;
+		list-style: none;
+		font-weight: bold;
+		vertical-align: middle;
+		text-decoration: none;
+		display: inline-block;
+		width: 100%;
+		color: $text;
+		font-family: $navs;
+		padding-top: 1em;
+	}
+	li.social {
+		float: left; //on of the components should be set to right or left or vice-versa
+	}
+	.social > a{	
+			padding-right: 1em;
+			list-style: none;
+			color: $text;
+	}
+	ul.sls {
+		float: right;
+	}	
+	.footer-copyright{
+			color: $text;
+			text-align: center;
+	}
+	.link {
+		text-decoration: none;
+		list-style: none;
+		font-weight: 1em;
+	}
+	.footnotes {
+		text-align: center;
+		float: left;
+
+	}
+	.product{
+		text-decoration: none;
+		color: inherit;
+	}
+}

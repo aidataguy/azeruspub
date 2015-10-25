@@ -1,0 +1,103 @@
+@charset "UTF-8";
+#blog{
+
+ .box{
+	height: 3em;
+	width: 7em;
+	background-color: $footer;
+	position: absolute;
+	z-index: 1;
+	border-radius: 0 0 50% 0;
+	color: $white;
+	margin-left: -1.5em;
+	p.date{
+		color: $white;
+	}
+}
+	.card-panel{
+		margin-top: 0;
+		h3{
+			padding-top: 1em;
+		}
+	}
+
+
+.aimage {
+	height: 5em;
+	width: 8em;
+}
+#articles {
+	padding: 2rem;
+	p{
+		color: $dark;
+		font: $font;
+	}
+
+}
+}
+
+.categories{
+	position: fixed;
+	color: $white;
+	font-weight: 1em;	
+	height: auto;
+	border-radius: 1em;
+	margin: 1em, 0, 1em, auto;
+	text-align: center;
+	background-color: $teal;
+	.chip{
+		background: $white;
+		color: $teal;
+		margin: 0.50em;
+	}
+}
+.showpost {
+	background: $white;
+	.l8, .m8{
+		padding-left: 5em;
+	}
+	.l4, .m4{
+		padding-top: 5em;
+	}
+	.leon{
+		margin-left: 1em;
+	}
+}
+
+.contact-form{
+	margin-top: 5em;
+	margin-bottom: 5em;
+	background: $footer;
+	border-radius: 1em;
+	.s12, .m12, .l12{
+		padding: 3em;
+	}
+	.formtags{
+		color: $white;
+	}	
+}
+
+.title {
+	color: $white;
+	font-family: $navs;
+}
+ 
+.pagination{
+	color: $white;
+	font-weight: bold;
+	font-family: $navs;
+
+}
+
+.chip{
+	background-color: $teal;
+	a{
+		text-decoration: none;
+		color: $white;
+	}
+	a:hover{
+		color: $footer;
+		font-weight: bold;
+
+	}
+}

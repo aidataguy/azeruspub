@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* Base Platform stylings*/
+html, 
+body { 
+	min-width: 100%;
+	height: 100%;
+	font-weight: 600;
+}
+body {
+	background: url('bridge.jpg') center center no-repeat;
+}
+
+/*Code for welcome page starts here*/
+li{
+	font-family: $navs;
+	list-style: none;
+	text-decoration: none;
+}
+
+p{
+	font-family: $font;
+}
+
+h1 {
+	color: $theme1;
+	font-weight: 400;
+	font-size: 2.5em;
+	text-decoration: underline;
+}

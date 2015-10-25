@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.pf{
+	margin-top: 3em; 
+	margin-bottom: 3em;	
+	background: $white;
+	color: $teal;
+	font-weight: 400;
+	font-family: $font;
+	label{
+		font-weight: bold;
+		font-family: $font;
+	}
+	
+	.pr{
+		padding: 3em;
+	}
+
+}
+.projectview{
+	background-color: $white;
+	padding-top: 3em !important;
+	h4{
+		color: $teal;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+	a{
+		text-decoration: none;
+		color: $teal;
+	}
+	.chip{
+		color: $white;
+	}
+	.descriptions{
+		color: $teal;
+		font-weight: normal;
+		font-family: $font;
+	}
+}
+

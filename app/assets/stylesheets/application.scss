@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *= require syntaxhighliter/shCore.css
+ *= require syntaxhighliter/shCoreMidnight.css
+ *= require_self
+ */
+@charset "UTF-8";
+@import "normalize";
+@import "materialize";
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Jura:500,600);
+$theme1: #990012;
+$dark: #0C090A;
+$highliter: #3090C7;
+$navs: 'Jura', sans-serif;
+$font: 'Raleway', sans-serif;
+$theme2: #848482;
+$text: #FEFCFF;
+$white: #FEFCFF;
+$footer: #f44336;
+$usual: #00897B;
+$hfaded: rgba(42, 127, 174, 0.60);
+$teal: #009688;
+@import 'normalize';
+@import 'animate';
+@import 'base';
+@import 'nav';
+@import 'footer';
+@import 'welcome';
+@import 'posts';
+@import 'project';
+@import 'contact';
+
+.page-flexbox-wrapper{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main{
+  flex: 1 1 auto;
+}
+.btn {
+	border-radius: 0.25em;
+}
+
+.cke_dialog_ui_input_select{
+	display: visible;
+}
+#notice_wrap {
+			position: absolute;
+			z-index: 999;
+			width: 100%;
+			top:0;
+		.notice, .alert{
+			font-family: $navs;
+			text-align: center;
+			font-weight: bold;
+			padding-top: 15px;
+			color: #fff;
+			height: 65px;
+			margin: 0;
+			letter-spacing: 0.1em;
+			background: rgba(205, 0, 0, 0.6);
+			}
+		}

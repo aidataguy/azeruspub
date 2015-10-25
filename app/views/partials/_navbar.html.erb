@@ -1,0 +1,41 @@
+<div class="navbar-fixed">	
+	<nav role="navigation" class ="teal darken-1">
+	    <div class="nav-wrapper z-depth-5">
+    	<%= link_to 'Developers | TheDesignable', root_path, class: 'brand-logo' %>
+    	 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a> 	  
+	      <ul class="right hide-on-med-and-down">
+	        <li class="navs"><%= link_to 'Blog', posts_path %> </li>
+	        <li class="navs"><%= link_to 'Projects', projects_path %></li>
+	        <li class="navs"><%= link_to 'Contact Us', new_contact_path%></li>
+		    <li class="navs">
+		    	<%= form_tag posts_path, method: :get do%>
+		    	<%=  text_field_tag :search, params[:query], placeholder: "Search Blog", name: "nil" , required: "", class: "input-field", id: "post_search", autocomplete: "off" do %>
+		    		<%= submit_tag "", class: "material-icons search-box" %>
+		    		<% end %>
+		    		<% if params[:search].present? %>
+		    			<%= link_to "X", posts_path %>
+		    		<% end %>	
+		    	
+		    	<% end %>	
+		    </li>
+	      </ul>
+	       <ul class="side-nav" id="slide-out">
+	        <li class="navs"><%= link_to 'Blog', posts_path %> </li>
+	        <li class="navs"><%= link_to 'Projects', projects_path %></li>
+	        <li class="navs"><%= link_to 'Contact Us', contacts_path%></li>
+	         <li class="navs">
+		    	<%= form_tag posts_path, method: :get do%>
+		    	<%=  text_field_tag :search, params[:query], placeholder: "Search Blog", name: "nil" , required: "", class: "input-field", id: "post_search", autocomplete: "on" do %>
+		    		<%= submit_tag "", class: "material-icons search-box typeahead" %>
+		    		<% end %>
+		    		<% if params[:query].present? %>
+		    			<%= link_to "X", posts_path %>
+		    		<% end %>	
+		    	
+		    	<% end %>	
+		    </li>
+      		</form>
+	      </ul>
+	  </div>
+	</nav>
+</div>

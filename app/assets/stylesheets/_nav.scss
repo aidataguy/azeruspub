@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*Nav font styling */
+
+.brand-logo{
+	font-weight: 600;
+	font-size: 1.5em;
+	list-style: none;
+	float: left;
+	text-decoration: none;
+	letter-spacing: 0.10em;
+	display: inline-block;
+	padding-left: 1em !important;
+}
+
+@media #{$small-and-down}{
+	.brand-logo{
+		font-size: 1em !important;
+		letter-spacing: none;
+		text-decoration: none;
+		display: inline-block;
+		float: left;
+		font-family: $navs;
+
+	}
+}
+
+#search {
+	background-color: $dark;
+	height: inherit;
+	opacity: 0.4;
+}
+
+.navbar-fixed {
+	font-family: $navs;
+	text: $white;
+		li{
+		font-weight: 600;
+		opacity: none;
+	}
+		a{
+			text-decoration: none;
+			opacity: none;
+		}
+}
+.circle{
+	background-color: $white;
+	color: $theme1;
+
+}
+
+.search-box{
+	background-color: transparent;
+	color: $white;
+	border: none;
+}
+

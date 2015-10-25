@@ -1,0 +1,21 @@
+<div class="container showpost">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<%= form_for @post, :html => {:multipart => true} do |f|%>
+				<%= label_tag "Post Title" %>
+				<%= f.text_field :title %> <br>
+				<%= label_tag "Image preview, if any" %> <br>
+				<%= f.file_field :preview %> <br>
+				<%= label_tag "Enter post description, 30 words" %>
+				<%= f.text_field :description %> <br>
+				<%= label_tag "Tags separated by commas(,)" %>
+				<%= f.text_field :tag_list, placeholder: "dog, cat, boxes" %> <br>
+				<%= label_tag "Type your heart out :)" %>
+				<%= f.text_area :content, placeholder: "post content goes here", :class => "ckeditor" %>
+				<%= f.button(type: 'submit', :class => "btn waves-effect waves-red") do %>
+						<i class="fa fa-send left"></i>Submit
+					<% end %>
+				<% end %>
+			</div>
+		</div>
+</div>
